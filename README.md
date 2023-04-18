@@ -34,5 +34,9 @@ This repository includes the source code and dataset used in the project, as wel
 ### 4. Insights & Conclusion
 
 ### 5. Contributions
+* Ni Jun Hong Glenn
+  * Everything
+* See Qin Yuan
+  * Nothing
 
 ### 6. References
