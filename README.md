@@ -1,5 +1,1 @@
-# SC1015-miniproj
-
-HI
-
-BYE
+Prediction of *INSERT*
