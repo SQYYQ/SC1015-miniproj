@@ -16,23 +16,23 @@ This repository includes the source code and dataset used in the project, as wel
 
 ---
 ### Table of Contents
-1. [Motivation & Problem Definition](#motivation-and-problem-definition)
-2. [Exploratory Data Analysis (EDA)](#eda)
-3. [Models](#models)
-4. [Insights & Conclusion](#insights-and-conclusion)
-5. [Contributions](#contributions)
-6. [References](#references)
+1. [Motivation & Problem Definition](#1-motivation--problem-definition)
+2. [Exploratory Data Analysis (EDA)](#2-exploratory-data-analysis-eda)
+3. [Models](#3-models)
+4. [Insights & Conclusion](#4-insights--conclusion)
+5. [Contributions](#5-contributions)
+6. [References](#6-references)
 
 ---
 
-### 1. Motivation & Problem Definition <a name="motivation-and-problem-definition"></a>
+### 1. Motivation & Problem Definition
 
-### 2. Exploratory Data Analysis (EDA) <a name="eda"></a>
+### 2. Exploratory Data Analysis (EDA)
 
-### 3. Models <a name="models"></a>
+### 3. Models
 
-### 4. Insights & Conclusion <a name="insights-and-conclusion"></a>
+### 4. Insights & Conclusion
 
-### 5. Contributions <a name="contributions"></a>
+### 5. Contributions
 
-### 6. References <a name="references"></a>
+### 6. References
