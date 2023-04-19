@@ -61,7 +61,18 @@ To prepare the data for analysis, we extracted "FOOD" related segments from the 
 ***NOTE 2***: Since the time series plot is difficult to interpret with so much data from *daily*, we will be converting the time axis to weeks and aggregating the daily sales data into weekly means to provide a clearer picture of the sales trends over time and aid in data exploration and visualization. <br>
 
 *Steps*:
-1. I-Value
+1. I-Value (Stationarity of Data)
+   - We used the KPSS test to check the stationarity of the data and found that the test statistic was greater than the critical value at all confidence intervals. This suggests that the time series is non-stationary.
+2. Differencing
+   - Differencing is a technique commonly used to eliminate trends from non-stationary time series data. After applying differencing to the data, we observed that the trend component of the time series had been successfully removed.
+3. MA Value
+   - By examining the autocorrelation function (ACF), we can determine the optimal value for the moving average (MA) parameter. We found that the highest correlation occurs at lag 1, indicating that the optimal value for MA is 1.
+4. AR Value
+   - By analyzing the partial autocorrelation function (PACF), we can determine the optimal value for the autoregressive (AR) component. We found that the highest correlation occurs at lag 1, suggesting that the optimal value for AR is 1.
+5. Prediction
+   - We train the model using the optimal values for the AR, I, and MA components.
+6. Exog Variables
+   - To improve the accuracy of our ARIMA model, we included two additional variables, 'onpromotion' and 'holiday', in the model. After retraining the model with these variables, we observed a slight improvement in the model's performance.
 
 ### 4. Insights & Conclusion
 In this notebook, we managed to train a time series model (ARIMA) to predict food sales for specific categories on a weekly basis has the potential to help businesses better plan their inventory and reduce food waste by avoiding over-ordering. This can contribute to achieving Goal 12 of responsible consumption and production.
