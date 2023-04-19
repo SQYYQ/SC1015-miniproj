@@ -57,7 +57,11 @@ To prepare the data for analysis, we extracted "FOOD" related segments from the 
 ***SUMMARY***: In general, it appears that food sales have increased over the years, so we should expect current prices to be slightly higher than before. Two variables that we should pay attention to are 'onpromotion' and 'holiday', as these represent the number of items on promotion and the number of holidays occurring in a given week. These variables appear to be factors that influence food sales.
 
 ### 3. Model: **ARIMA**
-NOTE: Our strategy for addressing this problem is to train the model to focus exclusively on a single food category. This approach should help the model generalize better than if we were to use data that includes multiple food categories. For the purposes of our example, we have selected the 'BREAD/BAKERY' category.
+***NOTE 1***: Our strategy for addressing this problem is to train the model to focus exclusively on a single food category. This approach should help the model generalize better than if we were to use data that includes multiple food categories. For the purposes of our example, we have selected the 'BREAD/BAKERY' category. <br>
+***NOTE 2***: Since the time series plot is difficult to interpret with so much data from *daily*, we will be converting the time axis to weeks and aggregating the daily sales data into weekly means to provide a clearer picture of the sales trends over time and aid in data exploration and visualization. <br>
+
+*Steps*:
+1. I-Value
 
 ### 4. Insights & Conclusion
 In this notebook, we managed to train a time series model (ARIMA) to predict food sales for specific categories on a weekly basis has the potential to help businesses better plan their inventory and reduce food waste by avoiding over-ordering. This can contribute to achieving Goal 12 of responsible consumption and production.
