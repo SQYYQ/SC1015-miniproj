@@ -18,7 +18,7 @@ This repository includes the source code and dataset used in the project, as wel
 ### Table of Contents
 1. [Motivation & Problem Definition](#1-motivation--problem-definition)
 2. [Exploratory Data Analysis (EDA)](#2-exploratory-data-analysis-eda)
-3. [Models](#3-models)
+3. [Models](#3-model-arima)
 4. [Insights & Conclusion](#4-insights--conclusion)
 5. [Contributions](#5-contributions)
 6. [References](#6-references)
@@ -56,9 +56,15 @@ To prepare the data for analysis, we extracted "FOOD" related segments from the 
 
 ***SUMMARY***: In general, it appears that food sales have increased over the years, so we should expect current prices to be slightly higher than before. Two variables that we should pay attention to are 'onpromotion' and 'holiday', as these represent the number of items on promotion and the number of holidays occurring in a given week. These variables appear to be factors that influence food sales.
 
-### 3. Models
+### 3. Model: **ARIMA**
+NOTE: Our strategy for addressing this problem is to train the model to focus exclusively on a single food category. This approach should help the model generalize better than if we were to use data that includes multiple food categories. For the purposes of our example, we have selected the 'BREAD/BAKERY' category.
 
 ### 4. Insights & Conclusion
+In this notebook, we managed to train a time series model (ARIMA) to predict food sales for specific categories on a weekly basis has the potential to help businesses better plan their inventory and reduce food waste by avoiding over-ordering. This can contribute to achieving Goal 12 of responsible consumption and production.
+
+Through exploratory data analysis (EDA), we were able to identify key trends and variables that impact food sales, such as the number of items on promotion and the occurrence of holidays. By incorporating these variables as exogenous inputs into our ARIMA model, we were able to improve its accuracy and reliability.
+
+Overall, our approach demonstrates the potential benefits of using data-driven insights and machine learning techniques to optimize business operations and improve sales forecasting. By doing so, businesses can make more informed decisions and ultimately contribute to sustainable and responsible consumption and production practices.
 
 ### 5. Contributions
 * Ni Jun Hong Glenn
