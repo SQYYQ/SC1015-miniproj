@@ -34,6 +34,27 @@ To achieve this goal, we have identified a specific problem that we aim to tackl
 To address this issue, we will leverage the dataset provided by Corporación Favorita, one of the largest Ecuadorian-based grocery retailers. By analyzing this data, we aim to identify patterns and trends that can help improve inventory management, reduce waste, and promote more sustainable consumption and production patterns. We believe that by using data-driven insights to drive decision-making in grocery stores, we can create a more efficient and sustainable food supply chain.
 
 ### 2. Exploratory Data Analysis (EDA)
+*Data Preparation*: <br>
+To prepare the data for analysis, we extracted "FOOD" related segments from the original dataset and filtered it to only include stores related to Quito. We also converted the data type of the relevant columns to numerical format to enable further analysis. Next, we merged the filtered datasets on the 'date' column to create a single, cleaned dataset that is suitable for analysis. These data preparation steps were taken to ensure that the data is relevant, accurate, and in the correct format for analysis. <br>
+
+*Data Visualisation*: <br>
+1. Distribution: Average Sale. 
+   - The provided code explores the distribution of average sales across different 'family' categories in the dataset. It creates a grid of 3x3 subplots using matplotlib to display histograms of sales for each 'family' category, as well as a separate histogram for the 'SEAFOOD' category. Seaborn is used to create the histograms, with the 'sales' column as the variable and the kde parameter set to True. The resulting visualizations provide insights into the distribution of average sales across different 'family' categories and can help identify trends and anomalies within the dataset. <br>
+   - Observation: The majority of the curves appear narrow, indicating that the data points are closely clustered together for each year between 2014 and 2017. This suggests that the sales within each category are relatively consistent over time, with little variation from year to year.
+
+2. LinePlot
+   - The provided code explores the trend of daily and weekly sales across different 'family' categories in the dataset using line plots created with seaborn. The 'sales' column is plotted on the y-axis and the 'date' column is plotted on the x-axis. The line plots provide insights into the trends in daily and weekly sales for each 'family' category and can help identify any seasonality or other patterns within the dataset. 
+   - Observations: The daily line plot does not provide clear or significant insights. The weekly line plot shows a general increase in food sales over the years.
+
+*Correlation Analysis*: <br>
+1. ScatterPlot
+   - The code uses scatterplot to explore the relationship between weekly sales and promotion status of items ('onpromotion') for different 'family' categories in the dataset. A grid of 3x3 subplots is created and Seaborn's regplot function is used to create scatter plots of weekly sales versus onpromotion count as well as a separate plot for the 'SEAFOOD' category. The correlation coefficient is calculated using pandas' corr function on the resampled data, and the best fit line and correlation coefficient are displayed on each plot. The results provide insights into the correlation between weekly sales and promotion status for different 'family' categories.
+   - Observation: There is a moderate to high correlation for each category, meaning the variable "onpromotion" has an effect on food sales.
+2. BoxPlot
+   - The provided code uses boxplot for weekly sales and holiday status of items ('holiday') for different 'family' categories in the dataset. For weekly sales versus holiday count, Seaborn's boxplot is used to create visualizations with correlation coefficients and subplots for each 'family' category. The results provide insights into the relationship between weekly sales and holiday status for different 'family' categories.
+   - Observation: There is a high holiday occurrences are associated with higher sales, despite the low correlation.
+
+***SUMMARY***: In general, it appears that food sales have increased over the years, so we should expect current prices to be slightly higher than before. Two variables that we should pay attention to are 'onpromotion' and 'holiday', as these represent the number of items on promotion and the number of holidays occurring in a given week. These variables appear to be factors that influence food sales.
 
 ### 3. Models
 
