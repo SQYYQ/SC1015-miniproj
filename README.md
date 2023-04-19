@@ -58,6 +58,7 @@ To prepare the data for analysis, we extracted "FOOD" related segments from the 
 
 ### 3. Model: **ARIMA**
 ***NOTE 1***: Our strategy for addressing this problem is to train the model to focus exclusively on a single food category. This approach should help the model generalize better than if we were to use data that includes multiple food categories. For the purposes of our example, we have selected the 'BREAD/BAKERY' category. <br>
+
 ***NOTE 2***: Since the time series plot is difficult to interpret with so much data from *daily*, we will be converting the time axis to weeks and aggregating the daily sales data into weekly means to provide a clearer picture of the sales trends over time and aid in data exploration and visualization. <br>
 
 ARIMA stands for Autoregressive Integrated Moving Average and it combines autoregressive (AR), differencing (I), and moving average (MA) components. We used an ARIMA model to train our time series dataset because they can capture complex patterns in the data and account for factors such as trends, seasonality, and noise.
@@ -84,9 +85,21 @@ Through exploratory data analysis (EDA), we were able to identify key trends and
 Overall, our approach demonstrates the potential benefits of using data-driven insights and machine learning techniques to optimize business operations and improve sales forecasting. By doing so, businesses can make more informed decisions and ultimately contribute to sustainable and responsible consumption and production practices.
 
 ### 5. Contributions
+Contributions based off the headings in the notebook.
 * Ni Jun Hong Glenn
-  * Everything
+  * Model
+  * Stationarity of data (I-value)
+  * Differencing
+  * Finding MA value
+  * Finding AR value
+  * Prediction
+  * Evaluate using RMSE
+  * Adding of exog variables
+  * Comparison between with Exog variables and without
+  * Conclusion
 * See Qin Yuan
-  * Nothing
+  * Data Preparation
+  * Exploratory Data Analysis
+  * Correlation
 
 ### 6. References
