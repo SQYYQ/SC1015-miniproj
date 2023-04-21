@@ -73,7 +73,7 @@ ARIMA stands for Autoregressive Integrated Moving Average and it combines autore
 4. AR Value
    - By analyzing the partial autocorrelation function (PACF), we can determine the optimal value for the autoregressive (AR) component. We found that the highest correlation occurs at lag 1, suggesting that the optimal value for AR is 1.
 5. Prediction
-   - We train the model using the optimal values for the AR, I, and MA components.
+   - We train the model using the optimal values for the AR, I, and MA components which is 1, 3, 1 respectively.
 6. Exog Variables
    - To improve the accuracy of our ARIMA model, we included two additional variables, 'onpromotion' and 'holiday', in the model. After retraining the model with these variables, we observed a slight improvement in the model's performance.
 
