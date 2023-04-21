@@ -67,7 +67,7 @@ ARIMA stands for Autoregressive Integrated Moving Average and it combines autore
 1. I-Value (Stationarity of Data)
    - We used the KPSS test to check the stationarity of the data and found that the test statistic was greater than the critical value at all confidence intervals. This suggests that the time series is non-stationary.
 2. Differencing
-   - Differencing is a technique commonly used to eliminate trends from non-stationary time series data. After applying differencing to the data, we observed that the trend component of the time series had been successfully removed.
+   - Differencing is a technique commonly used to eliminate trends from non-stationary time series data. After applying differencing to the data, we observed that the trend component of the time series had been successfully removed. We differenced twice, therefore the optimal I-value is 3.
 3. MA Value
    - By examining the autocorrelation function (ACF), we can determine the optimal value for the moving average (MA) parameter. We found that the highest correlation occurs at lag 1, indicating that the optimal value for MA is 1.
 4. AR Value
