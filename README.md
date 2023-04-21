@@ -43,7 +43,7 @@ To prepare the data for analysis, we extracted "FOOD" related segments from the 
    - Observation: The majority of the curves appear narrow, indicating that the data points are closely clustered together for each year between 2014 and 2017. This suggests that the sales within each category are relatively consistent over time, with little variation from year to year.
 
 2. LinePlot
-   - The provided code explores the trend of daily and weekly sales across different 'family' categories in the dataset using line plots created with seaborn. The 'sales' column is plotted on the y-axis and the 'date' column is plotted on the x-axis. The line plots provide insights into the trends in daily and weekly sales for each 'family' category and can help identify any seasonality or other patterns within the dataset. 
+   - The provided code explores the trend of daily and weekly sales across different 'family' categories in the dataset using line plots created with seaborn. The 'sales' column is plotted on the y-axis and the 'date' column is plotted on the x-axis. To create the weekly line plot, the dataset was resampled, and the 'sales' was aggregated using the 'mean' function. The line plots provide insights into the trends in daily and weekly sales for each 'family' category and can help identify any seasonality or other patterns within the dataset. 
    - Observations: The daily line plot does not provide clear or significant insights. The weekly line plot shows a general increase in food sales over the years.
 
 *Correlation Analysis*: <br>
