@@ -43,7 +43,7 @@ To prepare the data for analysis, we extracted "FOOD" related segments from the 
    - Observation: The majority of the curves appear narrow, indicating that the data points are closely clustered together for each year between 2014 and 2017. This suggests that the sales within each category are relatively consistent over time, with little variation from year to year.
 
 2. LinePlot
-   - The provided code explores the trend of daily and weekly sales across different 'family' categories in the dataset using line plots created with seaborn. The 'sales' column is plotted on the y-axis and the 'date' column is plotted on the x-axis. The line plots provide insights into the trends in daily and weekly sales for each 'family' category and can help identify any seasonality or other patterns within the dataset. 
+   - The provided code explores the trend of daily and weekly sales across different 'family' categories in the dataset using line plots created with seaborn. The 'sales' column is plotted on the y-axis and the 'date' column is plotted on the x-axis. To create the weekly line plot, the dataset was resampled, and the 'sales' was aggregated using the 'mean' function. The line plots provide insights into the trends in daily and weekly sales for each 'family' category and can help identify any seasonality or other patterns within the dataset. 
    - Observations: The daily line plot does not provide clear or significant insights. The weekly line plot shows a general increase in food sales over the years.
 
 *Correlation Analysis*: <br>
@@ -67,13 +67,13 @@ ARIMA stands for Autoregressive Integrated Moving Average and it combines autore
 1. I-Value (Stationarity of Data)
    - We used the KPSS test to check the stationarity of the data and found that the test statistic was greater than the critical value at all confidence intervals. This suggests that the time series is non-stationary.
 2. Differencing
-   - Differencing is a technique commonly used to eliminate trends from non-stationary time series data. After applying differencing to the data, we observed that the trend component of the time series had been successfully removed.
+   - Differencing is a technique commonly used to eliminate trends from non-stationary time series data. After applying differencing to the data, we observed that the trend component of the time series had been successfully removed. We differenced twice, therefore the optimal I-value is 3.
 3. MA Value
    - By examining the autocorrelation function (ACF), we can determine the optimal value for the moving average (MA) parameter. We found that the highest correlation occurs at lag 1, indicating that the optimal value for MA is 1.
 4. AR Value
    - By analyzing the partial autocorrelation function (PACF), we can determine the optimal value for the autoregressive (AR) component. We found that the highest correlation occurs at lag 1, suggesting that the optimal value for AR is 1.
 5. Prediction
-   - We train the model using the optimal values for the AR, I, and MA components.
+   - We train the model using the optimal values for the AR, I, and MA components which is 1, 3, 1 respectively.
 6. Exog Variables
    - To improve the accuracy of our ARIMA model, we included two additional variables, 'onpromotion' and 'holiday', in the model. After retraining the model with these variables, we observed a slight improvement in the model's performance.
 
