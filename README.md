@@ -103,3 +103,8 @@ Contributions based off the headings in the notebook.
   * Correlation
 
 ### 6. References
+* https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/
+* https://towardsdatascience.com/time-series-forecasting-with-arima-sarima-and-sarimax-ee61099e78f6
+* https://towardsdatascience.com/interpreting-acf-and-pacf-plots-for-time-series-forecasting-af0d6db4061c
+* https://towardsdatascience.com/find-the-order-of-arima-models-b4d99d474e7a
+* https://www.kaggle.com/competitions/store-sales-time-series-forecasting/overview
